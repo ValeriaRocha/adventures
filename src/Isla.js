@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from './Modal.js'
-
+/**/
 class Isla extends React.Component{
 
   constructor(props){
