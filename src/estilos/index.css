@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body{
+  min-height: 100%;
+  background-color: #59c9f9;
+  color: white;
+  font-family: 'Varela Round';
+}
+
+h3{
+  text-align: center;
+}
+
+p{
+  margin: 5px;
+  text-align: center;
+}
+
+
+.superior{
+  background-color: white;
+  color: #323963;
+  padding: 5px 10px 5px 10px;
+  overflow: auto;
+}
+
+.superior h1{
+  margin: 0px auto 5px auto;
+  width: 70%;
+  text-align: center;
+}
+
+.inferior{
+  background-color: #59c9f9;
+  overflow: auto;
+}
+
+
+.inferior p {
+  margin: 10px auto 10px auto;
+  padding: 10px;
+  text-align: center;
+  width: 60%;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  margin: 0px auto 0px auto;
+}
+
+
+.sectionIslaDestino1{
+  margin: 10px auto 10px auto;
+}
+
+.opcion{
+  background-color: white;
+  color: #323963;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 5px auto 5px auto;
+}
+
+/*ESTILOS MODAL*/
+.modalOverlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.modal{
+  width: 40%;
+  height: 90%;
+  background-color: white;
+  border-radius: 30px;
+  opacity: 1;
+}
+
+/*BOTONES*/
+#close{
+  margin: 10px 0px 0px 10px;
+  max-width: 40px;
+}
+
+#navegar{
+  border-radius: 20px;
+  background-color: #6fd476;
+  color: white;
+  padding: 10px;
+  margin: 40px auto 20px auto;
+  width: 30%;
+}
+
+#backIcon{
+  max-width: 40px;
+  margin-right: 10%;
+}
+
+.imgIsla{
+  max-width: 120px;
+  margin: 15px auto 15px auto;
+  display: block;
+  transition: all .3s ease;
+}
+
+/*Quitar hover de imgSelect si quieres quitar la animacion*/
+.imgSelect:hover{
+  transform: scale(1.1);
+}
+
+.boton:hover{
+  cursor: pointer;
+}
